@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eYoga</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-[#F2EFEA] text-[#2E3D3F] font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-[#A3C9A8]">eYoga</h1>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#inicio" class="hover:text-[#A3C9A8]">Inicio</a>
+          <a href="#nosotros" class="hover:text-[#A3C9A8]">Sobre Nosotros</a>
+          <a href="#servicios" class="hover:text-[#A3C9A8]">Servicios</a>
+          <a href="#agenda" class="hover:text-[#A3C9A8]">Agendamiento</a>
+          <a href="#galeria" class="hover:text-[#A3C9A8]">Galería</a>
+          <a href="#testimonios" class="hover:text-[#A3C9A8]">Testimonios</a>
+          <a href="#contacto" class="hover:text-[#A3C9A8]">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="bg-[#A3C9A8] text-white text-center py-20">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold mb-4">Equilibra tu cuerpo y mente</h2>
+        <p class="text-lg mb-6">Clases de yoga para todos los niveles en un entorno tranquilo y armonioso.</p>
+        <a href="#agenda" class="bg-white text-[#A3C9A8] px-6 py-2 rounded-full font-semibold hover:bg-[#F2EFEA]">Reserva tu clase</a>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-4">Sobre Nosotros</h3>
+        <p class="text-lg text-gray-700">Somos un centro de yoga dedicado a cultivar la paz interior, la salud y el bienestar físico y mental. Nuestro enfoque es personalizado, adaptado a cada estudiante.</p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="bg-white py-16 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-semibold text-center mb-8">Nuestros Servicios</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-[#F2EFEA] p-6 rounded-xl shadow-sm">
+            <h4 class="text-xl font-semibold mb-2">Hatha Yoga</h4>
+            <p>Una práctica suave centrada en la respiración y la alineación del cuerpo.</p>
+          </div>
+          <div class="bg-[#F2EFEA] p-6 rounded-xl shadow-sm">
+            <h4 class="text-xl font-semibold mb-2">Vinyasa Flow</h4>
+            <p>Secuencias dinámicas que sincronizan movimiento y respiración.</p>
+          </div>
+          <div class="bg-[#F2EFEA] p-6 rounded-xl shadow-sm">
+            <h4 class="text-xl font-semibold mb-2">Yoga Restaurativo</h4>
+            <p>Ideal para relajarse profundamente y reducir el estrés acumulado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agendamiento -->
+    <section id="agenda" class="py-16 px-4 bg-[#DDB892] text-[#2E3D3F]">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-6">Agenda tu Clase</h3>
+        <form id="reservaForm" class="space-y-4">
+          <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded" required>
+          <input type="email" placeholder="Correo electrónico" class="w-full p-3 rounded" required>
+          <select class="w-full p-3 rounded" required>
+            <option value="">Selecciona tipo de clase</option>
+            <option>Hatha Yoga</option>
+            <option>Vinyasa Flow</option>
+            <option>Yoga Restaurativo</option>
+          </select>
+          <input type="date" class="w-full p-3 rounded" required>
+          <button type="submit" class="bg-[#2E3D3F] text-white px-6 py-2 rounded hover:bg-[#1f2e2f]">Reservar</button>
+        </form>
+        <p id="mensajeReserva" class="mt-4 text-green-800 font-semibold"></p>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-16 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-6">Galería</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+          <div class="bg-gray-300 h-48 rounded-lg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="bg-white py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-6">Testimonios</h3>
+        <div class="space-y-6">
+          <blockquote class="bg-[#F2EFEA] p-6 rounded-lg shadow">“Nunca pensé que el yoga cambiaría tanto mi vida. Las clases aquí son mágicas.”<br><span class="block mt-2 font-semibold">— Camila R.</span></blockquote>
+          <blockquote class="bg-[#F2EFEA] p-6 rounded-lg shadow">“Excelente ambiente, instructores muy preparados y un espacio lleno de calma.”<br><span class="block mt-2 font-semibold">— Martín S.</span></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 px-4 bg-[#A3C9A8] text-white">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-6">Contáctanos</h3>
+        <p class="mb-4">¿Tienes dudas o quieres más información? Escríbenos:</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded text-black" required>
+          <input type="email" placeholder="Correo electrónico" class="w-full p-3 rounded text-black" required>
+          <textarea placeholder="Mensaje" class="w-full p-3 rounded text-black" rows="4" required></textarea>
+          <button type="submit" class="bg-white text-[#A3C9A8] px-6 py-2 rounded hover:bg-[#F2EFEA]">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2E3D3F] text-white py-6 mt-12">
+      <div class="text-center text-sm">&copy; 2025 eYoga. Todos los derechos reservados.</div>
+    </footer>
+
+    <script>
+      document.getElementById('reservaForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('mensajeReserva').textContent = "¡Gracias por reservar tu clase! Nos pondremos en contacto contigo pronto.";
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
